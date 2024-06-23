@@ -29,7 +29,6 @@ class AnimalAdapter(
         holder.nameOfAnAnimal.text = currentAnimal.name
         holder.continent.text = currentAnimal.continent
         holder.deleteItem.setOnClickListener {
-            // Change icon when clicked
             holder.deleteItem.setImageResource(R.drawable.delete_pressed)
             holder.deleteItem.postDelayed({
                 holder.deleteItem.setImageResource(R.drawable.delete) },500)

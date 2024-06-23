@@ -21,7 +21,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var animalList: MutableList<Animal>
     private lateinit var db: AnimalDatabase
 
-    // List of valid continents
     private val validContinents = listOf("Africa", "Asia", "Europe", "North America", "South America", "Antarctica", "Australia")
 
     override fun onCreate(savedInstanceState: Bundle?) {
