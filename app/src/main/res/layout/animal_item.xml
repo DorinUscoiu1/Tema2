@@ -22,20 +22,24 @@
                 android:id="@+id/nameOfAnAnimal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Animal Name" />
+                android:text="Animal Name"
+                android:textSize="16sp"
+                android:paddingBottom="4dp" />
 
             <TextView
                 android:id="@+id/continent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Continent" />
+                android:text="Continent"
+                android:textSize="14sp" />
         </LinearLayout>
 
         <ImageButton
             android:id="@+id/deleteItem"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_delete"
-            android:background="?attr/selectableItemBackground" />
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/delete"
+            android:background="?attr/selectableItemBackground"
+            android:scaleType="centerInside" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>

@@ -21,6 +21,9 @@ class MainActivity : AppCompatActivity() {
     private lateinit var animalList: MutableList<Animal>
     private lateinit var db: AnimalDatabase
 
+    // List of valid continents
+    private val validContinents = listOf("Africa", "Asia", "Europe", "North America", "South America", "Antarctica", "Australia")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -56,6 +59,11 @@ class MainActivity : AppCompatActivity() {
 
             if (name.isEmpty() || continent.isEmpty()) {
                 Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            if (!validContinents.contains(continent)) {
+                Toast.makeText(this, "Please enter a valid continent", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
